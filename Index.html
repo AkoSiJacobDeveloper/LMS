@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login</title>
+    <link rel="stylesheet" href="Style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900&family=Rethink+Sans:ital,wght@0,400..800;1,400..800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+<body>
+    <div class="body">
+        <main class="login-container">
+            <div class="login-card">
+                <div class="card-inner">
+                    <!-- Login Form -->
+                    <div class="card-face card-front">
+                        <header>
+                            <img src="logo.png" alt="Logo">
+                        </header>
+                        <h2 class="heading">Welcome Back!</h2>
+                        <form id="loginForm" onsubmit="login(event)">
+                            <label for="email">Email:</label>
+                            <input type="email" name="email" id="email" placeholder="example@gmail.com" required>
+                            <label for="password">Password:</label>
+                            <input type="password" name="password" id="password" placeholder="Password" required>
+                            <button type="submit" class="loginBtn">Login</button>
+                            <div class="account">
+                                <p>Don't have an account?</p>
+                                <a href="#" id="showSignUp">Create Account</a>
+                            </div>
+                        </form>
+                    </div>
+                
+                    <div class="card-face card-back">
+                        <header>
+                            <img src="logo.png" alt="Logo">
+                        </header>
+                        <h2 class="heading">Create Account</h2>
+                        <form id="signUpForm" onsubmit="signup(event)">
+                            <div class="wrap">
+                                <div class="wrap-card">
+                                    <label for="firstName">First Name:</label>
+                                    <input type="text" name="firstName" id="firstName" placeholder="First Name" required>
+                                </div>
+                                <div class="wrap-card">
+                                    <label for="lastName">Last Name:</label>
+                                    <input type="text" name="lastName" id="lastName" placeholder="Last Name" required>
+                                </div>
+                            </div>
+                            <label for="email">Email:</label>
+                            <input type="email" name="email" id="signUpEmail" placeholder="example@gmail.com" required>
+                            <label for="password">Password:</label>
+                            <input type="password" name="password" id="signUpPassword" placeholder="Password" required>
+                            <button type="submit" class="signupBtn">Sign Up</button>
+                            <div class="account">
+                                <p>Already have an account?</p>
+                                <a href="#" id="showLogin">Login</a>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+            <div class="login-image">
+                <img src="coding.svg" alt="Coding">
+            </div>
+        </main>  
+    </div>
+    <script src="Script.js"></script> 
+</body> 
+</html>

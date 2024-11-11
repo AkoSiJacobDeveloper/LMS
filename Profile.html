@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Profile</title>
+    <link rel="stylesheet" href="Style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900&family=Rethink+Sans:ital,wght@0,400..800;1,400..800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+<body>
+    <div class="home-container">
+        <header class="home-header">
+            <button id="hamburger" class="hamburger">
+                <i class="fas fa-bars"></i>
+            </button>
+
+            <div class="holder">
+                <nav class="nav-links">
+                    <ul>
+                        <li><a href="Home.html">HOME</a></li>
+                        <li><a href="About.html">ABOUT</a></li>
+                        <li><a href="Contact.html">CONTACT</a></li>
+                    </ul>
+                </nav>
+                <button class="logoutBtn" onclick="logoutBtn()" type="submit">
+                    <i class="fa-solid fa-right-from-bracket"></i>
+                    Logout</button>
+            </div>
+        </header>
+
+        <aside class="home-sidebar">
+            <span>WS301</span>
+            <button class="profileBtn" id="profileBtn">
+                <i class="fa-solid fa-user"></i>
+                <p class="textBtn">Profile</p>
+            </button>
+            <nav class="sidebar-links">
+                <p class="sidebar-subheading">
+                    <i class="fa-brands fa-html5"></i>
+                    HTML</p>
+                <ul>
+                    <li><i class="fa-brands fa-html5"></i><a href="Lesson1.html">Lesson 1</a></li>
+                    <li><i class="fa-brands fa-html5"></i><a href="Lesson2.html">Lesson 2</a></li>
+                    <li><i class="fa-brands fa-html5"></i><a href="Lesson3.html">Lesson 3</a></li>
+                    <li><i class="fa-brands fa-html5"></i><a href="Lesson4.html">Lesson 4</a></li>
+                    <li><i class="fa-brands fa-html5"></i><a href="Lesson5.html">Lesson 5</a></li>
+                    <li><i class="fa-brands fa-html5"></i><a href="#">Lesson 6</a></li>
+                    <li><i class="fa-brands fa-html5"></i><a href="#">Lesson 7</a></li>
+                    <li><i class="fa-brands fa-html5"></i><a href="#">Lesson 8</a></li>
+                    <li><i class="fa-brands fa-html5"></i><a href="#">Lesson 9</a></li>
+                    <li><i class="fa-brands fa-html5"></i><a href="#">Lesson 10</a></li>
+                    <li><i class="fa-brands fa-html5"></i><a href="#">Lesson 11</a></li>
+                    <li><i class="fa-brands fa-html5"></i><a href="#">Lesson 12</a></li>
+                </ul>
+                <p class="sidebar-subheading2">
+                    <i class="fa-brands fa-css3-alt"></i>
+                    CSS</p>
+                <ul>
+                    <li class="li"><i class="fa-brands fa-css3-alt"></i><a href="#">Lesson 1</a></li>
+                    <li class="li"><i class="fa-brands fa-css3-alt"></i><a href="#">Lesson 2</a></li>
+                    <li class="li"><i class="fa-brands fa-css3-alt"></i><a href="#">Lesson 3</a></li>
+                    <li class="li"><i class="fa-brands fa-css3-alt"></i><a href="#">Lesson 4</a></li>
+                    <li class="li"><i class="fa-brands fa-css3-alt"></i><a href="#">Lesson 5</a></li>
+                    <li class="li"><i class="fa-brands fa-css3-alt"></i><a href="#">Lesson 6</a></li>
+                    <li class="li"><i class="fa-brands fa-css3-alt"></i><a href="#">Lesson 7</a></li>
+                    <li class="li"><i class="fa-brands fa-css3-alt"></i><a href="#">Lesson 8</a></li>
+                    <li class="li"><i class="fa-brands fa-css3-alt"></i><a href="#">Lesson 9</a></li>
+                    <li class="li"><i class="fa-brands fa-css3-alt"></i><a href="#">Lesson 10</a></li>
+                    <li class="li"><i class="fa-brands fa-css3-alt"></i><a href="#">Lesson 11</a></li>
+                    <li class="li"><i class="fa-brands fa-css3-alt"></i><a href="#">Lesson 12</a></li>
+                </ul>
+                <p class="sidebar-subheading3">
+                    <i class="fa-brands fa-js"></i>
+                    Javascript</p>
+                <ul>
+                    <li class="li2"><i class="fa-brands fa-css3-alt"></i><a href="#" class="a">Lesson 1</a></li>
+                    <li class="li2"><i class="fa-brands fa-css3-alt"></i><a href="#" class="a">Lesson 2</a></li>
+                    <li class="li2"><i class="fa-brands fa-css3-alt"></i><a href="#" class="a">Lesson 3</a></li>
+                    <li class="li2"><i class="fa-brands fa-css3-alt"></i><a href="#" class="a">Lesson 4</a></li>
+                    <li class="li2"><i class="fa-brands fa-css3-alt"></i><a href="#" class="a">Lesson 5</a></li>
+                    <li class="li2"><i class="fa-brands fa-css3-alt"></i><a href="#" class="a">Lesson 6</a></li>
+                    <li class="li2"><i class="fa-brands fa-css3-alt"></i><a href="#" class="a">Lesson 7</a></li>
+                    <li class="li2"><i class="fa-brands fa-css3-alt"></i><a href="#" class="a">Lesson 8</a></li>
+                    <li class="li2"><i class="fa-brands fa-css3-alt"></i><a href="#" class="a">Lesson 9</a></li>
+                    <li class="li2"><i class="fa-brands fa-css3-alt"></i><a href="#" class="a">Lesson 10</a></li>
+                    <li class="li2"><i class="fa-brands fa-css3-alt"></i><a href="#" class="a">Lesson 11</a></li>
+                    <li class="li2"><i class="fa-brands fa-css3-alt"></i><a href="#" class="a">Lesson 12</a></li>
+                </ul>
+            </nav>
+        </aside>
+
+        <main class="home-content" id="content">
+            <h3 class="profile-heading">PROFILE</h3>
+            <div class="profile-container">
+                <div class="profile-card">
+                    <div class="profile-card1">
+                        <div class="info-container">
+                            <img src="profile.svg" alt="Profile">
+                            <p class="name">Paul Jacob Tocmo</p>
+                            <i class="fa-solid fa-pen-to-square"></i>
+                        </div>
+                    </div>
+                    <div class="profile-card2">
+                        <div class="profile-wrap">
+                            <div></div>
+                            <h3 class="profile-card2-heading">Information</h3>
+                            <i class="fa-solid fa-pen-to-square"></i>
+                        </div>
+                        <div class="infos-container">
+                            <div class="info">
+                                <p class="info-heading">
+                                    <strong>
+                                        First Name:
+                                    </strong>
+                                </p>
+                                <p class="info-data">Paul Jacob</p>
+                            </div>
+                            <div class="info">
+                                <p class="info-heading">
+                                    <strong>
+                                        Last Name:
+                                    </strong>
+                                </p>
+                                <p class="info-data">Tocmo</p>
+                            </div>
+                            <div class="info">
+                                <p class="info-heading">
+                                    <strong>
+                                        Email:
+                                    </strong>
+                                </p>
+                                <p class="info-data">pauljacobtocmo96@gmail.com</p>
+                            </div>
+                            <div class="info">
+                                <p class="info-heading">
+                                    <strong>
+                                        Studying:
+                                    </strong>
+                                </p>
+                                <p class="info-data">HTML,CSS, Javascript</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </main>
+    </div>
+</body>
+<script src="Script.js"></script>
+<script src="Script2.js"></script>
+</html>

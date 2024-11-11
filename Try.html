@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        /* Basic card styling */
+.card {
+    position: relative;
+    width: 300px;
+    height: 200px;
+    background: #f0f0f0;
+    overflow: hidden;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    transition: transform 0.3s ease;
+    cursor: pointer;
+}
+
+/* Text content styling */
+.card-content {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    opacity: 0; /* Initially hidden */
+    transition: opacity 0.3s ease;
+}
+
+/* Hover effect: show text content */
+.card:hover .card-content {
+    opacity: 1; /* Makes the text visible */
+}
+
+/* Optional hover effect for the card itself */
+.card:hover {
+    transform: scale(1.05); /* Slightly scales up the card */
+}
+ 
+    </style>
+</head>
+<body>
+    <div class="card">
+        <div class="card-content">
+            <h3>Card Title</h3>
+            <p>This is some additional text that will show on hover.</p>
+        </div>
+    </div>
+    
+</body>
+</html>
